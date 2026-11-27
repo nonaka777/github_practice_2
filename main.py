@@ -3,8 +3,8 @@ def add_numbers(num1, num2):
 	return number
 
 def multiply_numbers(num1, num2):
-	# TODO: 掛け算の実装
-	return None
+	number = num1 * num2
+	return number
 
 def subtract_numbers(num1, num2):
 	# TODO: 引き算の実装
@@ -28,7 +28,7 @@ def calcuate(choice, num1, num2):
 	if choice == '1':
 		result = add_numbers(num1, num2)
 		print(f"{num1} + {num2} = {result}")
-	elif choice == 2:
+	elif choice == '2':
 		result = multiply_numbers(num1, num2)
 		print(f"{num1} * {num2} = {result}")
 	elif choice == '3':
