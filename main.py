@@ -14,14 +14,16 @@ def divide_numbers(num1, num2):
 	# TODO: 割り算の実装
 	if num2 == 0:
 		raise ZeroDivisionError("0で割ることはできません!")
-	return None
+	number = num1 / num2
+	return number
 
 def average_numbers(num1, num2):
 	# TODO: 平均の実装 
-	return None
+	number = add_numbers(num1,num2) / 2
+	return number
 
 def check_choice(choice):
-	if choice not in ['1', '2', '3', '4']:
+	if choice not in ['1', '2', '3', '4', '5']:
 		raise ValueError("無効な選択です。1から5の数字を選んでください。")
 
 def calcuate(choice, num1, num2):
@@ -53,7 +55,7 @@ def main():
 		check_choice(choice)
 		num1 = float(input("最初の数字を入力してください: "))
 		num2 = float(input("次の数字を入力してください: "))
-		calcuate(choice, num2, num1)
+		calcuate(choice, num1, num2)
 	except ValueError as e:
 		print(f"エラー: {type(e).__name__}\nエラーメッセージ: {e}")
 	except ZeroDivisionError as e:
