@@ -7,8 +7,8 @@ def multiply_numbers(num1, num2):
 	return number
 
 def subtract_numbers(num1, num2):
-	# TODO: 引き算の実装
-	return None
+	number = num1 - num2
+	return number
 
 def divide_numbers(num1, num2):
 	# TODO: 割り算の実装
